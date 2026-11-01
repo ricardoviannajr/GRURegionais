@@ -1,0 +1,415 @@
+[
+  {
+    "id": 1,
+    "aerodromo": "Paulo Afonso",
+    "cidade": "Paulo Afonso",
+    "uf": "BA",
+    "regiao": "Nordeste",
+    "icao_aisweb": "SBUF",
+    "iata": "PAF",
+    "ciad": "BA0011",
+    "coordenadas": {
+      "latitude": "09° 24' 04\" S",
+      "longitude": "038° 15' 04\" W"
+    },
+    "elevacao_m": 269,
+    "elevacao_ft": 884,
+    "pista": {
+      "designadores": "09/27",
+      "comprimento_m": 1800,
+      "largura_m": 45,
+      "tipo_piso": "ASPH",
+      "pcn": "120/F/A/X/T"
+    },
+    "operacao": {
+      "regras": "VFR / IFR",
+      "periodo": "Diurno / Noturno",
+      "cindacta": "CINDACTA III",
+      "fir": "SREC (Recife)"
+    },
+    "comunicacao": {
+      "tipo": "AFIS / Rádio",
+      "designador": "Rádio Paulo Afonso",
+      "frequencia_mhz": "125.850"
+    }
+  },
+  {
+    "id": 2,
+    "aerodromo": "Horácio de Mattos (Lençóis)",
+    "cidade": "Lençóis",
+    "uf": "BA",
+    "regiao": "Nordeste",
+    "icao_aisweb": "SBLE",
+    "iata": "LEC",
+    "ciad": "BA0015",
+    "coordenadas": {
+      "latitude": "12° 28' 42\" S",
+      "longitude": "041° 16' 37\" W"
+    },
+    "elevacao_m": 506,
+    "elevacao_ft": 1660,
+    "pista": {
+      "designadores": "14/32",
+      "comprimento_m": 2082,
+      "largura_m": 30,
+      "tipo_piso": "ASPH",
+      "pcn": "44/R/A/W/T"
+    },
+    "operacao": {
+      "regras": "VFR / IFR",
+      "periodo": "Diurno / Noturno",
+      "cindacta": "CINDACTA III",
+      "fir": "SREC (Recife)"
+    },
+    "comunicacao": {
+      "tipo": "ERAA",
+      "designador": "ERAA Lençóis",
+      "frequencia_mhz": "132.600"
+    }
+  },
+  {
+    "id": 3,
+    "aerodromo": "Brigadeiro Camarão (Vilhena)",
+    "cidade": "Vilhena",
+    "uf": "RO",
+    "regiao": "Norte",
+    "icao_aisweb": "SBVH",
+    "iata": "BVH",
+    "ciad": "RO0002",
+    "coordenadas": {
+      "latitude": "12° 41' 40\" S",
+      "longitude": "060° 05' 54\" W"
+    },
+    "elevacao_m": 615,
+    "elevacao_ft": 2018,
+    "pista": {
+      "designadores": "03/21",
+      "comprimento_m": 2600,
+      "largura_m": 30,
+      "tipo_piso": "ASPH",
+      "pcn": "30/F/A/X/T"
+    },
+    "operacao": {
+      "regras": "VFR / IFR",
+      "periodo": "Diurno / Noturno",
+      "cindacta": "CINDACTA IV",
+      "fir": "SBAZ (Amazônica)"
+    },
+    "comunicacao": {
+      "tipo": "AFIS / Rádio",
+      "designador": "Rádio Vilhena",
+      "frequencia_mhz": "125.900"
+    }
+  },
+  {
+    "id": 4,
+    "aerodromo": "Barreirinhas",
+    "cidade": "Barreirinhas",
+    "uf": "MA",
+    "regiao": "Nordeste",
+    "icao_aisweb": "SSRS",
+    "icao_edital_anterior": "SBRR",
+    "iata": "BRB",
+    "ciad": "MA0008",
+    "coordenadas": {
+      "latitude": "02° 45' 24\" S",
+      "longitude": "042° 48' 12\" W"
+    },
+    "elevacao_m": 12,
+    "elevacao_ft": 39,
+    "pista": {
+      "designadores": "11/29",
+      "comprimento_m": 1500,
+      "largura_m": 30,
+      "tipo_piso": "ASPH",
+      "pcn": "71/F/A/Y/T",
+      "resa_m": "90x60 (RWY 11 e 29)"
+    },
+    "operacao": {
+      "regras": "VFR",
+      "periodo": "Diurno / Noturno (O/R 2h)",
+      "cindacta": "CINDACTA IV",
+      "fir": "SBAZ (Amazônica)"
+    },
+    "comunicacao": {
+      "tipo": "Coordenação Livre",
+      "designador": "Frequência Livre / Rádio",
+      "frequencia_mhz": "Coordenação"
+    }
+  },
+  {
+    "id": 5,
+    "aerodromo": "Regional de Araguaína",
+    "cidade": "Araguaína",
+    "uf": "TO",
+    "regiao": "Norte",
+    "icao_aisweb": "SWGN",
+    "iata": "AUX",
+    "ciad": "TO0001",
+    "coordenadas": {
+      "latitude": "07° 13' 42\" S",
+      "longitude": "048° 14' 27\" W"
+    },
+    "elevacao_m": 236,
+    "elevacao_ft": 774,
+    "pista": {
+      "designadores": "09/27",
+      "comprimento_m": 1800,
+      "largura_m": 45,
+      "tipo_piso": "ASPH",
+      "pcn": "44/F/C/X/U"
+    },
+    "operacao": {
+      "regras": "VFR / IFR",
+      "periodo": "Diurno / Noturno",
+      "cindacta": "CINDACTA I",
+      "fir": "SBBS (Brasília)"
+    },
+    "comunicacao": {
+      "tipo": "FCA / ERAA",
+      "designador": "FCA Araguaína / ERAA",
+      "frequencia_mhz": "125.850 / 126.300"
+    }
+  },
+  {
+    "id": 6,
+    "aerodromo": "Serra da Capivara (São Raimundo Nonato)",
+    "cidade": "São Raimundo Nonato",
+    "uf": "PI",
+    "regiao": "Nordeste",
+    "icao_aisweb": "SWKQ",
+    "icao_edital_anterior": "SWSR",
+    "iata": "NSR",
+    "ciad": "PI0007",
+    "coordenadas": {
+      "latitude": "09° 05' 00\" S",
+      "longitude": "042° 38' 41\" W"
+    },
+    "elevacao_m": 415,
+    "elevacao_ft": 1362,
+    "pista": {
+      "designadores": "16/34",
+      "comprimento_m": 1650,
+      "largura_m": 45,
+      "tipo_piso": "ASPH",
+      "pcn": "34/F/B/X/T"
+    },
+    "operacao": {
+      "regras": "VFR / IFR",
+      "periodo": "Diurno / Noturno",
+      "cindacta": "CINDACTA III",
+      "fir": "SREC (Recife)"
+    },
+    "comunicacao": {
+      "tipo": "ERAA",
+      "designador": "ERAA Serra da Capivara",
+      "frequencia_mhz": "126.300"
+    }
+  },
+  {
+    "id": 7,
+    "aerodromo": "Capital do Café (Cacoal)",
+    "cidade": "Cacoal",
+    "uf": "RO",
+    "regiao": "Norte",
+    "icao_aisweb": "SSKW",
+    "iata": "OAL",
+    "ciad": "RO0006",
+    "coordenadas": {
+      "latitude": "11° 29' 44\" S",
+      "longitude": "061° 27' 03\" W"
+    },
+    "elevacao_m": 249,
+    "elevacao_ft": 817,
+    "pista": {
+      "designadores": "17/35",
+      "comprimento_m": 2100,
+      "largura_m": 45,
+      "tipo_piso": "ASPH",
+      "pcn": "31/F/A/X/T"
+    },
+    "operacao": {
+      "regras": "VFR / IFR",
+      "periodo": "Diurno / Noturno",
+      "cindacta": "CINDACTA IV",
+      "fir": "SBAZ (Amazônica)"
+    },
+    "comunicacao": {
+      "tipo": "AFIS / Rádio",
+      "designador": "Rádio Cacoal",
+      "frequencia_mhz": "131.100"
+    }
+  },
+  {
+    "id": 8,
+    "aerodromo": "Dragão do Mar / Canoa Quebrada (Aracati)",
+    "cidade": "Aracati",
+    "uf": "CE",
+    "regiao": "Nordeste",
+    "icao_aisweb": "SBAC",
+    "iata": "ARX",
+    "ciad": "CE0011",
+    "coordenadas": {
+      "latitude": "04° 34' 07\" S",
+      "longitude": "037° 48' 17\" W"
+    },
+    "elevacao_m": 36,
+    "elevacao_ft": 118,
+    "pista": {
+      "designadores": "09/27",
+      "comprimento_m": 1800,
+      "largura_m": 30,
+      "tipo_piso": "ASPH",
+      "pcn": "36/F/A/X/U"
+    },
+    "operacao": {
+      "regras": "VFR / IFR",
+      "periodo": "Diurno / Noturno",
+      "cindacta": "CINDACTA III",
+      "fir": "SREC (Recife)"
+    },
+    "comunicacao": {
+      "tipo": "AFIS / Rádio",
+      "designador": "Rádio Aracati",
+      "frequencia_mhz": "131.250"
+    }
+  },
+  {
+    "id": 9,
+    "aerodromo": "Santa Magalhães (Serra Talhada)",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "regiao": "Nordeste",
+    "icao_aisweb": "SNHS",
+    "iata": "SET",
+    "ciad": "PE0007",
+    "coordenadas": {
+      "latitude": "08° 03' 41\" S",
+      "longitude": "038° 19' 43\" W"
+    },
+    "elevacao_m": 479,
+    "elevacao_ft": 1572,
+    "pista": {
+      "designadores": "13/31",
+      "comprimento_m": 1800,
+      "largura_m": 30,
+      "tipo_piso": "ASPH",
+      "pcn": "31/F/B/Y/T",
+      "cabeceiras_deslocadas": "THR 13 (103m) / THR 31 (104m)"
+    },
+    "operacao": {
+      "regras": "VFR / IFR",
+      "periodo": "Diurno / Noturno",
+      "cindacta": "CINDACTA III",
+      "fir": "SREC (Recife)"
+    },
+    "comunicacao": {
+      "tipo": "ERAA",
+      "designador": "ERAA Serra Talhada",
+      "frequencia_mhz": "130.425"
+    }
+  },
+  {
+    "id": 10,
+    "aerodromo": "Porto Alegre do Norte",
+    "cidade": "Porto Alegre do Norte",
+    "uf": "MT",
+    "regiao": "Centro-Oeste",
+    "icao_aisweb": "SDH2",
+    "icao_edital_anterior": "SWPQ",
+    "iata": "PBQ",
+    "ciad": "MT0662",
+    "coordenadas": {
+      "latitude": "10° 55' 05\" S",
+      "longitude": "051° 36' 32\" W"
+    },
+    "elevacao_m": 217,
+    "elevacao_ft": 712,
+    "pista": {
+      "designadores": "Pista Municipal",
+      "comprimento_m": 1600,
+      "largura_m": 18,
+      "tipo_piso": "ASPH",
+      "resistencia": "5700 kg / 0.70 MPa"
+    },
+    "operacao": {
+      "regras": "VFR",
+      "periodo": "Diurno",
+      "cindacta": "CINDACTA I",
+      "fir": "SBBS (Brasília)"
+    },
+    "comunicacao": {
+      "tipo": "Coordenação Livre",
+      "designador": "Frequência Livre / Rádio",
+      "frequencia_mhz": "Coordenação"
+    }
+  },
+  {
+    "id": 11,
+    "aerodromo": "Garanhuns",
+    "cidade": "Garanhuns",
+    "uf": "PE",
+    "regiao": "Nordeste",
+    "icao_aisweb": "SNGN",
+    "iata": "QGP",
+    "ciad": "PE0009",
+    "coordenadas": {
+      "latitude": "08° 50' 04\" S",
+      "longitude": "036° 28' 17\" W"
+    },
+    "elevacao_m": 759,
+    "elevacao_ft": 2490,
+    "pista": {
+      "designadores": "16/34",
+      "comprimento_m": 1259,
+      "largura_m": 28,
+      "tipo_piso": "ASPH",
+      "pcn": "6/F/C/Y/T"
+    },
+    "operacao": {
+      "regras": "VFR",
+      "periodo": "Diurno / Noturno (O/R 4h)",
+      "cindacta": "CINDACTA III",
+      "fir": "SREC (Recife)"
+    },
+    "comunicacao": {
+      "tipo": "Coordenação Livre",
+      "designador": "Frequência Livre / Rádio",
+      "frequencia_mhz": "Coordenação"
+    }
+  },
+  {
+    "id": 12,
+    "aerodromo": "Araripina",
+    "cidade": "Araripina",
+    "uf": "PE",
+    "regiao": "Nordeste",
+    "icao_aisweb": "SNAB",
+    "iata": "JAO",
+    "ciad": "PE0012",
+    "coordenadas": {
+      "latitude": "07° 35' 11\" S",
+      "longitude": "040° 32' 07\" W"
+    },
+    "elevacao_m": 740,
+    "elevacao_ft": 2428,
+    "pista": {
+      "designadores": "13/31",
+      "comprimento_m": 1247,
+      "largura_m": 27,
+      "tipo_piso": "ASPH",
+      "pcn": "11/F/B/Y/T"
+    },
+    "operacao": {
+      "regras": "VFR",
+      "periodo": "Diurno",
+      "cindacta": "CINDACTA III",
+      "fir": "SREC (Recife)"
+    },
+    "comunicacao": {
+      "tipo": "Coordenação Livre",
+      "designador": "Frequência Livre / Rádio",
+      "frequencia_mhz": "Coordenação"
+    }
+  }
+]

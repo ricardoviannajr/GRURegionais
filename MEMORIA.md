@@ -1,18 +1,17 @@
 # Ponto de Controle de Desenvolvimento: GRURegionais
 
-STATUS: DADOS E DOCUMENTOS COLETADOS (PROGRAMA AMPLIAR)
+STATUS: DADOS AISWEB E INFRAESTRUTURA AERONÁUTICA CONSOLIDADOS
 
 ## Contexto e Objetivo
-- Coleta exaustiva de dados da concessão dos 12 aeroportos regionais para a GRU Airport no âmbito do Programa AmpliAR (Ministério de Portos e Aeroportos / ANAC / TCU).
-- Documentação técnica e dados estruturados armazenados no projeto em `docs/ampliar/`.
+- Coleta e estruturação de dados aeronáuticos oficiais dos 12 aeroportos regionais (Programa AmpliAR / GRU Airport) via base pública do DECEA / AISWEB.
+- Resolução e validação cadastral de códigos ICAO, pistas, cabeceiras, PCN, frequências de comunicação e regras de operação.
 
 ## Decisões Técnicas e Entregas
-- Criada a pasta `docs/ampliar/` com documentação completa:
-  - `01_visao_geral_ampliar_gru.md`: Histórico institucional, leilão B3, modelo de repactuação consensual e consolidação financeira.
-  - `02_fichas_tecnicas_aeroportos.md`: Fichas detalhadas dos 12 aeródromos (ICAO, IATA, valores e obras).
-  - `03_marco_regulatorio_fontes.md`: Marco regulatório (Portaria MPOR nº 373/2025, deliberações ANAC e TCU).
-  - `aeroportos_dados.json`: Dataset estruturado em formato JSON com metadados para análises e integrações.
-- `README.md` principal do repositório devidamente atualizado.
+- Criado diretório `docs/aisweb/` com a base aeronáutica oficial:
+  - `aerodromos_aisweb.json`: Dataset padronizado contendo dados de pista, PCN, coordenadas, elevação, órgãos ATS/CINDACTA e frequências de rádio.
+  - `01_fichas_aeronauticas_aisweb.md`: Relatório técnico executivo com tabela comparativa de pistas, fichas individuais e notas de padronização ICAO (Barreirinhas SSRS vs SBRR; São Raimundo Nonato SWKQ vs SWSR; Porto Alegre do Norte SDH2 vs SWPQ).
+- Atualizado `docs/ampliar/aeroportos_dados.json` com mapeamento cruzado (`icao_aisweb`).
+- Atualizado `README.md` com a nova estrutura de documentação e tabela de referência.
 
 ## Próximos Passos
-- Definir modelagem dos dados, scripts analíticos em `src/` ou dashboards/relatórios executivos conforme demanda.
+- Desenvolver scripts em `src/` para análise comparativa de capacidade de pista vs perfil de frota (ATR-72, E195, B737).

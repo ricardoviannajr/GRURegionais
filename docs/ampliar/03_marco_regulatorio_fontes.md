@@ -43,3 +43,4 @@
 - **Broadcast / Estadão:** Cobertura do pregão na B3 e valores por aeroporto arrematado.
 - **CNN Brasil & Poder360:** Detalhamento da portaria ministerial e prorrogações de concessão.
 - **Portais Setoriais (AeroIN, BeNews, Melhores Destinos):** Detalhamento dos aeroportos turísticos beneficiados (Barreirinhas, Lençóis, Serra da Capivara, Paulo Afonso).
+

@@ -68,3 +68,4 @@ Em vez de licitações isoladas que costumam atrair pouco interesse do mercado p
 - **Transição Operacional:** Período de transferência de gestão (da administração estadual/municipal/Infraero para a GRU Airport).
 - **Fiscalização ANAC:** Acompanhamento das metas de Nível de Serviço e indicadores contratuais de infraestrutura.
 - **Liberação Progressiva de Garantias:** Condicionada à entrega e homologação das fases de obras nos terminais regionais.
+

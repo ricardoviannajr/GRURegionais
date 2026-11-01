@@ -145,3 +145,4 @@ Este documento detalha cada um dos 12 aeroportos regionais incorporados pela Con
   - Conclusão das intervenções de pista e sinalização para voos regulares.
   - Reestruturação das instalações básicas do terminal de passageiros.
   - Implantação de cercamento operacional de padrão ANAC.
+
