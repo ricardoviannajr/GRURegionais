@@ -1,13 +1,14 @@
 ﻿# Ponto de Controle de Desenvolvimento: GRURegionais
 
-STATUS: AGUARDANDO BRAINSTORMING
+STATUS: EM DEFINICAO DIRETA
 
 ## Contexto e Objetivo
-- Inicializacao do projeto GRURegionais no ecossistema local.
-- Aguardando alinhamento e levantamento de requisitos.
+- Projeto GRURegionais inicializado e sincronizado local/remoto.
+- Processo de especificacao direta definido (sem etapa de brainstorming formal).
 
 ## Decisoes Tecnicas
-- Repositorio criado com os padroes de governanca do ecossistema.
+- Estrutura base e governanca prontas.
+- Aguardando direcionamento de requisitos e arquitetura pelo desenvolvedor.
 
 ## Proximos Passos
-- Conduzir sessao de brainstorming para definicao de arquitetura e escopo.
+- Receber instrucoes diretas para implementacao / modelagem.
