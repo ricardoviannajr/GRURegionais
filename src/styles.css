@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./assets/fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./assets/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Open Sans', sans-serif;
+  color: #252927;
+  background: #f0f2ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --orange: #f36b2b;
+  --orange-dark: #d94f16;
+  --ink: #252927;
+  --muted: #78817e;
+  --line: #e4e8e4;
+  --green: #2a7564;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { width: 100%; height: 100%; }
+body { margin: 0; min-width: 0; min-height: 0; overflow: hidden; }
+button, select, textarea { font: inherit; }
+button { cursor: pointer; }
+.app-shell { display: flex; flex-direction: column; width: 100%; height: 100vh; height: 100dvh; min-height: 0; overflow: hidden; }
+.topbar { height: 58px; flex: 0 0 58px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; background: #fff; border-bottom: 1px solid var(--line); }
+.brand-lockup, .network-status { display: flex; align-items: center; }
+.brand-logo { display: block; width: 160px; height: auto; }
+.network-status { gap: 8px; color: #68716e; font-size: 9px; font-weight: 700; letter-spacing: .08em; }
+.network-status svg { color: var(--green); }
+.network-status i, .map-caption i { width: 7px; height: 7px; border-radius: 50%; background: #6ea68a; }
+.workspace { display: flex; flex: 1; min-height: 0; }
+.airport-panel { width: 420px; flex: 0 0 420px; min-height: 0; overflow-x: hidden; overflow-y: auto; padding: 25px 27px 22px; background: #fff; border-right: 1px solid var(--line); scrollbar-width: thin; }
+.airport-panel-empty { display: grid; place-items: center; overflow: hidden; color: #78817e; font-size: 11px; text-align: center; }
+.panel-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 19px; }
+.eyebrow, .section-title, .weather-heading { font-size: 9px; font-weight: 700; letter-spacing: .11em; }
+.eyebrow { color: var(--orange-dark); }
+.panel-heading h1 { margin: 5px 0 0; font-size: 17px; font-weight: 600; }
+.airport-identity { padding: 17px 0 16px; border-top: 2px solid var(--orange); border-bottom: 1px solid var(--line); }
+.airport-codes { display: flex; gap: 7px; align-items: center; margin-bottom: 8px; }
+.airport-codes span, .airport-codes b, .airport-class { padding: 3px 6px; border-radius: 2px; font-size: 10px; font-weight: 700; letter-spacing: .06em; }
+.airport-codes span { color: #fff; background: #353c39; }
+.airport-codes b { color: var(--orange-dark); background: #fff0e8; }
+.airport-class-ap0, .marker-ap0 { color: #292b26; background: #f2c744; }
+.airport-class-ap1, .marker-ap1 { color: #fff; background: #d8292f; }
+.airport-identity h2 { margin: 0; font-size: 23px; line-height: 1.25; font-weight: 600; }
+.airport-identity h2 span { color: #919894; font-size: 15px; font-weight: 400; }
+.airport-identity p { margin: 4px 0 0; color: #666f6b; font-size: 11px; }
+.airport-location { display: flex; align-items: flex-start; gap: 6px; margin-top: 12px; color: #68716e; font-size: 10px; line-height: 1.5; }
+.airport-location svg { flex: 0 0 auto; color: var(--orange); }
+.airport-location span { flex: 0 0 auto; }
+.investment { display: flex; justify-content: space-between; align-items: center; margin-top: 11px; padding-top: 9px; color: #777f7b; border-top: 1px solid #edf0ed; font-size: 8px; font-weight: 700; letter-spacing: .07em; }
+.investment strong { color: var(--orange-dark); font-size: 11px; letter-spacing: 0; }
+.weather-card { margin: 14px 0 17px; padding: 12px 13px; background: #f4f7f5; border-left: 3px solid var(--green); }
+.weather-heading { display: flex; align-items: center; gap: 7px; color: var(--green); }
+.weather-heading small { margin-left: auto; color: #7d8983; font-size: 8px; }
+.weather-main { display: flex; align-items: center; gap: 10px; margin: 5px 0 4px 24px; }
+.weather-main strong { font-size: 27px; font-weight: 600; line-height: 1; }
+.weather-main span { color: #4b5550; font-size: 11px; }
+.weather-details { display: flex; gap: 14px; margin-left: 24px; color: #67716c; font-size: 9px; }
+.weather-details span { display: flex; align-items: center; gap: 4px; }
+.weather-credit { display: block; margin: 6px 0 0 24px; color: #8b938f; font-size: 8px; }
+.weather-muted { display: flex; align-items: center; gap: 8px; min-height: 44px; color: #66716b; font-size: 10px; }
+.data-section { padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.section-title { display: flex; align-items: center; justify-content: space-between; margin-bottom: 9px; color: #69716e; }
+.section-title a { display: grid; place-items: center; width: 22px; height: 22px; color: var(--orange-dark); text-decoration: none; }
+.data-line { display: grid; grid-template-columns: 19px 91px 1fr; gap: 7px; align-items: center; min-height: 31px; border-bottom: 1px solid #f0f2f0; }
+.data-icon { color: #83908a; }
+.data-label { color: #78817d; font-size: 9px; }
+.data-line strong { color: #313936; font-size: 9px; font-weight: 600; text-align: right; }
+.aisweb-code { display: flex; align-items: center; gap: 7px; margin: 10px 0 0 26px; color: #8a928e; font-size: 8px; }
+.aisweb-code strong { color: #4f5954; font-size: 9px; }
+.aisweb-code span { margin-left: auto; }
+.gru-note { margin: 0; color: #69716e; font-size: 10px; line-height: 1.65; }
+.flight-section { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.flight-section .section-title small { color: #929a96; font-size: 7px; letter-spacing: .04em; }
+.flight-note { margin: -3px 0 8px; color: #78817e; font-size: 9px; line-height: 1.45; }
+.flight-list { list-style: none; margin: 0; padding: 0; }
+.flight-row { padding: 9px 0; border-top: 1px solid #f0f2f0; }
+.flight-route { display: grid; grid-template-columns: minmax(0, 1fr) 16px minmax(0, 1fr); align-items: center; gap: 5px; color: #343b38; font-size: 9px; font-weight: 600; }
+.flight-route > span:last-child { text-align: right; }
+.flight-route svg { color: var(--orange-dark); }
+.flight-route small { display: block; color: #89918d; font-size: 7px; font-weight: 400; }
+.flight-info { display: flex; justify-content: space-between; gap: 8px; margin-top: 5px; color: #68716d; font-size: 8px; }
+.flight-info strong { color: #343b38; }
+.flight-info time { color: var(--green); font-weight: 700; white-space: nowrap; }
+.flight-aircraft { display: block; margin-top: 3px; color: #858e89; font-size: 8px; }
+.collaborator-section { padding: 10px 0 0; }
+.collaborator-list { list-style: none; margin: 0; padding: 0; }
+.collaborator-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid #f0f2f0; font-size: 10px; }
+.collaborator-row strong { color: #343b38; font-weight: 600; }
+.collaborator-row span { color: #78817e; font-size: 9px; }
+.collaborator-empty { margin: 0; color: #78817e; font-size: 10px; }
+.map-panel { position: relative; flex: 1; min-width: 0; background: #e9eee9; }
+.map-heading { position: absolute; z-index: 500; top: 17px; left: 58px; right: 18px; display: flex; align-items: center; justify-content: space-between; pointer-events: none; }
+.map-heading > div, .map-heading button { display: flex; align-items: center; justify-content: center; height: 34px; background: #fff; border: 1px solid #e4e8e4; box-shadow: 0 2px 8px #1e30261a; }
+.map-heading > div { gap: 8px; padding: 0 11px; color: #4c5651; border-radius: 3px; font-size: 9px; font-weight: 700; letter-spacing: .09em; }
+.map-heading > div svg { color: var(--orange); }
+.map-heading button { width: 36px; color: #47524c; border-radius: 3px; pointer-events: auto; }
+.map-heading button:hover { color: var(--orange-dark); }
+.regional-map { width: 100%; height: 100%; background: #e8eee8; }
+.leaflet-container { font-family: 'Open Sans', sans-serif; }
+.airport-marker-wrap { background: transparent; border: 0; }
+.airport-marker { display: grid; place-items: center; width: 46px; height: 26px; border: 1px solid #fff; border-radius: 3px; box-shadow: 0 1px 5px #13221d70; font-size: 8px; font-weight: 700; }
+.marker-gru { color: #fff; background: #2d7765; }
+.marker-selected { box-shadow: 0 0 0 3px #25292780, 0 1px 5px #13221d70; }
+.leaflet-popup-content-wrapper { border-radius: 4px; }
+.leaflet-popup-content { margin: 12px 14px; }
+.popup-content { display: flex; flex-direction: column; gap: 3px; min-width: 170px; color: #68716d; font-size: 10px; }
+.popup-content strong { color: #252927; font-size: 14px; }
+.popup-content > span:not(.popup-code) { line-height: 1.4; }
+.popup-code { color: var(--orange-dark); font-size: 9px; font-weight: 700; letter-spacing: .05em; }
+.popup-code b { color: #a0a8a3; }
+.popup-content small { margin-top: 4px; color: #69746e; font-size: 9px; }
+.popup-weather { color: var(--green) !important; }
+.popup-layer-button { display: flex; align-items: center; gap: 7px; margin-top: 7px; padding: 7px 8px; color: #fff; background: var(--green); border: 0; border-radius: 3px; font-size: 9px; font-weight: 600; }
+.popup-layer-button:hover { background: #205e50; }
+.map-caption { position: absolute; z-index: 400; right: 19px; bottom: 42px; display: flex; align-items: center; gap: 12px; padding: 8px 10px; color: #4e5752; background: #fff; border: 1px solid #e0e5e0; border-radius: 3px; box-shadow: 0 2px 8px #1e30261a; font-size: 9px; }
+.map-caption span:first-child { display: flex; align-items: center; gap: 6px; font-weight: 600; }
+.map-caption span:last-child { color: #858e89; }
+.map-legend { position: absolute; z-index: 400; bottom: 15px; left: 16px; display: flex; gap: 15px; padding: 8px 10px; color: #56605a; background: #ffffffed; border: 1px solid #e2e7e2; border-radius: 3px; font-size: 8px; }
+.map-legend span { display: flex; align-items: center; gap: 6px; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); }
+.legend-gru { background: var(--green); }
+.app-footer { height: 27px; flex: 0 0 27px; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; color: #8a928e; background: #fff; border-top: 1px solid var(--line); font-size: 8px; font-weight: 600; letter-spacing: .08em; }
+.app-footer b { padding: 0 4px; color: var(--orange); }
+
+@media (max-width: 900px) {
+  .airport-panel { width: 365px; flex-basis: 365px; padding-right: 20px; padding-left: 20px; }
+}
+
+@media (max-width: 680px) {
+  .app-shell { height: 100vh; height: 100dvh; min-height: 0; overflow: hidden; }
+  .topbar { height: 52px; flex-basis: 52px; padding: 0 14px; }
+  .brand-logo { width: 145px; }
+  .network-status span { display: none; }
+  .workspace { flex: 1 1 0; flex-direction: column-reverse; min-height: 0; overflow: hidden; }
+  .map-panel { flex: 0 0 clamp(180px, 38dvh, 360px); width: 100%; min-height: 0; }
+  .airport-panel { width: 100%; flex: 1 1 0; min-height: 0; overflow-x: hidden; overflow-y: auto; padding: 18px 19px 20px; border-right: 0; }
+  .map-caption { bottom: 42px; right: 10px; }
+  .map-legend { left: 10px; bottom: 12px; }
+  .app-footer { height: auto; min-height: 30px; padding: 8px 11px; font-size: 7px; }
+}
+
+@media (max-width: 400px) {
+  .airport-panel { padding-right: 15px; padding-left: 15px; }
+  .data-line { grid-template-columns: 18px 78px 1fr; }
+  .data-line strong { font-size: 8px; }
+  .app-footer span:first-child { display: none; }
+  .app-footer { justify-content: flex-end; }
+}

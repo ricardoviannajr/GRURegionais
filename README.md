@@ -39,3 +39,30 @@ No âmbito da primeira rodada do **Programa AmpliAR** (Portaria MPOR nº 373/202
 | 10 | **Porto Alegre do Norte** | MT | `SDH2` | PBQ | R$ 25,3 M |
 | 11 | **Garanhuns** | PE | `SNGN` | QGP | R$ 22,1 M |
 | 12 | **Araripina** | PE | `SNAB` | JAO | R$ 19,6 M |
+
+## Painel de Gestão
+
+Aplicação React para consulta dos 12 aeroportos regionais do AmpliAR e do terminal GRU. A seleção de um marcador atualiza a ficha AISWEB, a previsão climática local, os dados de equipe e os trechos aéreos informados para aquele aeroporto. Aeroportos sem trecho cadastrado mantêm a lista de voos vazia. Clique no fundo do mapa não altera a ficha; GRU mantém uma orientação neutra na lateral. O diretório local inclui nome, função e lotação identificados no documento de entrevista; itinerários pessoais e apontamentos detalhados de segurança não são exibidos.
+
+As etiquetas dos aeroportos usam vermelho para AP-1 e amarelo para AP-0. SBUF, SWKQ e SDH2 são classificados como AP-0 conforme a relação operacional informada.
+
+### Executar localmente
+
+```bash
+npm install
+npm run dev
+```
+
+### Gerar versão para publicação
+
+```bash
+npm run build
+```
+
+A pasta `dist/` contém os arquivos estáticos. Publique-a em um servidor HTTP estático ou intranet; o `base` relativo permite hospedagem em subdiretório. O mapa alterna entre ruas e imagem de satélite da Esri pelo popup, e o clima usa Open-Meteo; esses recursos precisam de acesso à internet.
+
+### Testes
+
+```bash
+npm test
+```
